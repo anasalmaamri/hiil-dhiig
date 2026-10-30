@@ -78,18 +78,18 @@ footer{background:#230709;color:#d9bcc0;padding:34px 0;font-size:13px}footer a{c
 <symbol id="dm" viewBox="0 0 200 200"><path d="M35 200Q35 125 100 125Q165 125 165 200Z" fill="var(--c)"/><circle cx="100" cy="90" r="26" fill="var(--s)"/><path d="M74 84Q76 56 100 56Q124 56 126 84Z" fill="#fff" stroke="#e8dfd2"/><rect x="120" y="150" width="68" height="15" rx="7" fill="var(--s)"/><path d="M186 150C196 120 190 100 178 80" stroke="#b3202e" stroke-width="3" fill="none"/><rect x="166" y="38" width="24" height="42" rx="7" fill="#b3202e"/></symbol></defs></svg>
 <header class="top"><div class="wrap nav">
 <a class="brand" href="#"><svg viewBox="0 0 32 40"><path d="M16 1C13 7 4 17 4 24a12 12 0 0 0 24 0C28 17 19 7 16 1Z" fill="#b3202e"/></svg>Hiil-<b>Dhiig</b></a>
-<nav class="links" id="links"><a href="#donors">Deeq-bixiyeyaal</a><a href="#join">Ku biir</a><a href="#compat">Nooca dhiigga</a><a href="#request">Codso dhiig</a><a href="#register">Isdiiwaangeli</a><a href="#support">Taageer</a><a href="#faq">Su'aalo</a></nav>
-<a class="btn o" href="#request">Codso dhiig</a><button class="btn p" id="inst" style="display:none">Rakib App</button>
-<button class="menu" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+<nav class="links" id="links"><a data-k="t1" href="#donors">Deeq-bixiyeyaal</a><a data-k="t2" href="#join">Ku biir</a><a data-k="t3" href="#compat">Nooca dhiigga</a><a data-k="t4" href="#request">Codso dhiig</a><a data-k="t5" href="#register">Isdiiwaangeli</a><a data-k="t6" href="#support">Taageer</a><a data-k="t7" href="#faq">Su'aalo</a></nav>
+<a data-k="t8" class="btn o" href="#request">Codso dhiig</a><button data-k="t9" class="btn p" id="inst" style="display:none">Rakib App</button>
+<button data-k="t10" class="menu" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
 </div></header>
 
 <main>
 <section class="hero"><div class="wrap hg">
 <div>
-<h1>Dhiigaaga waa nolol qof kale.</h1>
-<p>Waxaan dhisaynaa bangi dhiig oo Soomaaliyeed, oo isku xira dadka deeqda bixiya iyo qoysaska u baahan, magaalo kasta. Hal deeq waxay badbaadin kartaa ilaa saddex qof.</p>
+<h1 data-k="t11">Dhiigaaga waa nolol qof kale.</h1>
+<p data-k="t12">Waxaan dhisaynaa bangi dhiig oo Soomaaliyeed, oo isku xira dadka deeqda bixiya iyo qoysaska u baahan, magaalo kasta. Hal deeq waxay badbaadin kartaa ilaa saddex qof.</p>
 <div class="q">“Gacmo badan baa culeys fududeeya.”</div>
-<div class="btns"><a class="btn p" href="#register">Noqo deeq-bixiye</a><a class="btn o" href="#request">Codso dhiig degdeg ah</a></div>
+<div class="btns"><a data-k="t13" class="btn p" href="#register">Noqo deeq-bixiye</a><a data-k="t14" class="btn o" href="#request">Codso dhiig degdeg ah</a></div>
 <div class="stats"><div><strong>3</strong>qof ayaa laga badbaadin karaa hal deeq</div><div><strong>10</strong>daqiiqo ayuu qaataa bixintu</div><div><strong>0</strong>lacag, waa bilaash</div></div>
 </div>
 <div class="scene"><svg class="drop" viewBox="0 0 300 330" role="img" aria-label="Dhibic dhiig oo xiddig Soomaaliyeed ku leh"><path d="M150 12C120 80 60 150 60 225a90 90 0 0 0 180 0C240 150 180 80 150 12Z" fill="#b3202e"/><path d="M95 200c0-30 20-60 40-90" stroke="#ffffff55" stroke-width="8" fill="none" stroke-linecap="round"/><polygon points="150,155 163.5,196.4 207.1,196.5 171.9,222.1 185.3,263.5 150,238 114.7,263.5 128.1,222.1 92.9,196.5 136.5,196.4" fill="#fff"/></svg><svg class="fg a" viewBox="0 0 200 200" style="--c:#fff;--s:#7a4a2e;--h:#8f1824"><use href="#dw"/></svg><svg class="fg b" viewBox="0 0 200 200" style="--c:#fff;--s:#5e3a24"><use href="#dm"/></svg></div>
@@ -99,92 +99,94 @@ footer{background:#230709;color:#d9bcc0;padding:34px 0;font-size:13px}footer a{c
 <select class="f" id="bf" aria-label="Nooca dhiigga"><option value="">Nooca dhiigga</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select>
 <select class="f" id="cf" aria-label="Magaalada"><option value="">Magaalada</option><option>Muqdisho</option><option>Hargeysa</option><option>Boosaaso</option><option>Kismaayo</option><option>Garoowe</option><option>Gaalkacyo</option><option>Baydhabo</option><option>Beledweyne</option></select>
 <select class="f" id="tf" aria-label="Waqtiga"><option value="">Waqti kasta</option><option value="morning">Subax</option><option value="afternoon">Galab</option><option value="evening">Fiid</option></select>
-<button class="btn p" onclick="filterDonors()">Raadi</button></div></div>
+<button data-k="t15" class="btn p" onclick="filterDonors()">Raadi</button></div></div>
 
 <section style="padding-top:34px"><div class="wrap">
-<h2>Deeq-bixiyeyaasha diyaarka ah</h2><p class="lead">Tusaale. Xogta dhabta ah waxay soo muuqan doontaa marka server-ka la xiro. Lambarrada taleefanka lama muujiyo; xiriirka waxaa dhex-dhexaadiya Hiil-Dhiig.</p>
+<h2 data-k="t16">Deeq-bixiyeyaasha diyaarka ah</h2><p data-k="t17" class="lead">Tusaale. Xogta dhabta ah waxay soo muuqan doontaa marka server-ka la xiro. Lambarrada taleefanka lama muujiyo; xiriirka waxaa dhex-dhexaadiya Hiil-Dhiig.</p>
 <div class="dg" id="dgrid">
-<article class="card" data-b="O+" data-c="Muqdisho" data-t="morning"><div class="row"><div class="bb">O+</div><span class="tag">Diyaar maanta</span></div><h3>Deeq-bixiye #HD001</h3><p>Muqdisho, Hodan. 09:00–13:00</p><button class="btn o" style="width:100%" onclick="contact('#HD001')">Codso xiriir</button></article>
-<article class="card" data-b="A+" data-c="Muqdisho" data-t="afternoon"><div class="row"><div class="bb">A+</div><span class="tag">Diyaar maanta</span></div><h3>Deeq-bixiye #HD002</h3><p>Muqdisho, Wadajir. 14:00–18:00</p><button class="btn o" style="width:100%" onclick="contact('#HD002')">Codso xiriir</button></article>
-<article class="card" data-b="B+" data-c="Hargeysa" data-t="morning"><div class="row"><div class="bb">B+</div><span class="tag">Diyaar maanta</span></div><h3>Deeq-bixiye #HD003</h3><p>Hargeysa, 26 June. 08:00–12:00</p><button class="btn o" style="width:100%" onclick="contact('#HD003')">Codso xiriir</button></article>
-</div><p id="none" class="lead" style="display:none">Cidna kuma jirto raadintan. Tijaabi nooc kale, ama <a href="#request" style="color:var(--red);font-weight:700">codso dhiig</a>.</p>
+<article class="card" data-b="O+" data-c="Muqdisho" data-t="morning"><div class="row"><div class="bb">O+</div><span data-k="t18" class="tag">Diyaar maanta</span></div><h3 data-k="t19">Deeq-bixiye #HD001</h3><p data-k="t20">Muqdisho, Hodan. 09:00–13:00</p><button data-k="t21" class="btn o" style="width:100%" onclick="contact('#HD001')">Codso xiriir</button></article>
+<article class="card" data-b="A+" data-c="Muqdisho" data-t="afternoon"><div class="row"><div class="bb">A+</div><span data-k="t22" class="tag">Diyaar maanta</span></div><h3 data-k="t23">Deeq-bixiye #HD002</h3><p data-k="t24">Muqdisho, Wadajir. 14:00–18:00</p><button data-k="t25" class="btn o" style="width:100%" onclick="contact('#HD002')">Codso xiriir</button></article>
+<article class="card" data-b="B+" data-c="Hargeysa" data-t="morning"><div class="row"><div class="bb">B+</div><span data-k="t26" class="tag">Diyaar maanta</span></div><h3 data-k="t27">Deeq-bixiye #HD003</h3><p data-k="t28">Hargeysa, 26 June. 08:00–12:00</p><button data-k="t29" class="btn o" style="width:100%" onclick="contact('#HD003')">Codso xiriir</button></article>
+</div><p id="none" class="lead" style="display:none">Cidna kuma jirto raadintan. Tijaabi nooc kale, ama <a data-k="t30" href="#request" style="color:var(--red);font-weight:700">codso dhiig</a>.</p>
 </div></section>
 
-<section class="soft" id="how"><div class="wrap"><h2>Sidee u shaqeeyaa?</h2><p class="lead">Afar tallaabo oo fudud.</p>
-<div class="steps"><div><h3>Isdiiwaangeli</h3><p>Geli magacaaga, nooca dhiigga iyo goobta aad joogto.</p></div><div><h3>Isu waafaji</h3><p>Nidaamku wuxuu kuu helaa codsiyada ku habboon.</p></div><div><h3>Hel ogeysiis</h3><p>Marka dhiig loo baahdo, waan ku soo wargelinaa.</p></div><div><h3>Bixi dhiig</h3><p>U tag xarun caafimaad oo dhiig ku deeq.</p></div></div></div></section>
+<section class="soft" id="how"><div class="wrap"><h2 data-k="t31">Sidee u shaqeeyaa?</h2><p data-k="t32" class="lead">Afar tallaabo oo fudud.</p>
+<div class="steps"><div><h3 data-k="t33">Isdiiwaangeli</h3><p data-k="t34">Geli magacaaga, nooca dhiigga iyo goobta aad joogto.</p></div><div><h3 data-k="t35">Isu waafaji</h3><p data-k="t36">Nidaamku wuxuu kuu helaa codsiyada ku habboon.</p></div><div><h3 data-k="t37">Hel ogeysiis</h3><p data-k="t38">Marka dhiig loo baahdo, waan ku soo wargelinaa.</p></div><div><h3 data-k="t39">Bixi dhiig</h3><p data-k="t40">U tag xarun caafimaad oo dhiig ku deeq.</p></div></div></div></section>
 
-<section class="ban"><div class="wrap"><h2>Badbaadi walaalkaa, si adiga laguu badbaadiyo.</h2><p>Qof ha ku dhiman dhiig la'aan. Maanta ku soo biir.</p><div class="btns" style="justify-content:center"><a class="btn w" href="#register">Bixi dhiig</a><button class="btn w" onclick="share()">La wadaag</button></div></div></section>
-<section class="soft"><div class="wrap"><h2>Soomaalidu waa bixisaa</h2><p class="lead">Hooyo, arday, ganacsade iyo dhalinyaro: dhammaan qof walba wuu bixin karaa. (Sawirro dhab ah ku dar <code>assets/photos/1.jpg</code> ilaa <code>4.jpg</code>, oggolaansho la'aan ha soo bandhigin.)</p><div class="gal"><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#8f1824;--s:#7a4a2e;--h:#3b0d13"><use href="#dw"/></svg><img src="assets/photos/1.jpg" alt="Hooyo" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption>Hooyo</figcaption></figure><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#c98a1b;--s:#9a6440;--h:#5a1a22"><use href="#dw"/></svg><img src="assets/photos/2.jpg" alt="Ardayad jaamacad" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption>Ardayad jaamacad</figcaption></figure><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#8f1824;--s:#5e3a24;--h:"><use href="#dm"/></svg><img src="assets/photos/3.jpg" alt="Ganacsade" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption>Ganacsade</figcaption></figure><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#3b0d13;--s:#7a4a2e;--h:"><use href="#dm"/></svg><img src="assets/photos/4.jpg" alt="Dhalinyaro" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption>Dhalinyaro</figcaption></figure></div></div></section>
-<section id="join"><div class="wrap"><h2>Qof walba wuu ka qeyb qaadan karaa</h2><p class="lead">Dhiig-bixintu ma aha shaqada isbitaalka oo keliya, waa shaqo bulsho oo dhan.</p><div class="jg"><div class="card"><div style="font-size:30px">🎓</div><h3>Jaamacadaha</h3><p>Qabso maalmo dhiig-bixin, abuur koox arday oo ololaha hogaamisa.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🏫</div><h3>Iskuullada</h3><p>Macallimiinta iyo waalidiinta wacyi-geli; ardayda 18+ way bixin karaan.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🏛️</div><h3>Xarumaha dowladda</h3><p>Wasaaradaha, ciidamada iyo xafiisyada ka dhig goobo dhiig-bixin.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🛒</div><h3>Suuqyada</h3><p>Ganacsatadu waxay boorar iyo ololo ka sameeyaan dukaamadooda.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">⭐</div><h3>Dadka caanka ah</h3><p>Codkiinnu wuxuu gaaraa malaayiin: ku biira oo dhiig bixiya.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">📖</div><h3>Culimada</h3><p>Khudbadaha iyo masaajidka ku faafi fariinta badbaadinta nafta.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">👩</div><h3>Haweenka</h3><p>Hooyooyinka iyo ururada haweenka: hoggaamiya ololaha, gaadiidka iyo wacyigelinta.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🧑‍🎓</div><h3>Dhalinyarada</h3><p>Ururada, kooxaha ciyaaraha iyo guutooyinka ardayda: sameeya tartan dhiig-bixin.</p><a class="btn o" href="#register" style="width:100%">Ku biir</a></div></div></div></section>
+<section class="ban"><div class="wrap"><h2 data-k="t41">Badbaadi walaalkaa, si adiga laguu badbaadiyo.</h2><p data-k="t42">Qof ha ku dhiman dhiig la'aan. Maanta ku soo biir.</p><div class="btns" style="justify-content:center"><a data-k="t43" class="btn w" href="#register">Bixi dhiig</a><button data-k="t44" class="btn w" onclick="share()">La wadaag</button></div></div></section>
+<section class="soft"><div class="wrap"><h2 data-k="t45">Soomaalidu waa bixisaa</h2><p class="lead">Hooyo, arday, ganacsade iyo dhalinyaro: dhammaan qof walba wuu bixin karaa. (Sawirro dhab ah ku dar <code>assets/photos/1.jpg</code> ilaa <code>4.jpg</code>, oggolaansho la'aan ha soo bandhigin.)</p><div class="gal"><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#8f1824;--s:#7a4a2e;--h:#3b0d13"><use href="#dw"/></svg><img src="assets/photos/1.jpg" alt="Hooyo" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption data-k="t46">Hooyo</figcaption></figure><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#c98a1b;--s:#9a6440;--h:#5a1a22"><use href="#dw"/></svg><img src="assets/photos/2.jpg" alt="Ardayad jaamacad" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption data-k="t47">Ardayad jaamacad</figcaption></figure><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#8f1824;--s:#5e3a24;--h:"><use href="#dm"/></svg><img src="assets/photos/3.jpg" alt="Ganacsade" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption data-k="t48">Ganacsade</figcaption></figure><figure class="ph"><svg viewBox="0 0 200 200" style="--c:#3b0d13;--s:#7a4a2e;--h:"><use href="#dm"/></svg><img src="assets/photos/4.jpg" alt="Dhalinyaro" onload="this.parentNode.classList.add('real')" onerror="this.remove()"><figcaption data-k="t49">Dhalinyaro</figcaption></figure></div></div></section>
+<section id="join"><div class="wrap"><h2 data-k="t50">Qof walba wuu ka qeyb qaadan karaa</h2><p data-k="t51" class="lead">Dhiig-bixintu ma aha shaqada isbitaalka oo keliya, waa shaqo bulsho oo dhan.</p><div class="jg"><div class="card"><div style="font-size:30px">🎓</div><h3 data-k="t52">Jaamacadaha</h3><p data-k="t53">Qabso maalmo dhiig-bixin, abuur koox arday oo ololaha hogaamisa.</p><a data-k="t54" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🏫</div><h3 data-k="t55">Iskuullada</h3><p data-k="t56">Macallimiinta iyo waalidiinta wacyi-geli; ardayda 18+ way bixin karaan.</p><a data-k="t57" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🏛️</div><h3 data-k="t58">Xarumaha dowladda</h3><p data-k="t59">Wasaaradaha, ciidamada iyo xafiisyada ka dhig goobo dhiig-bixin.</p><a data-k="t60" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🛒</div><h3 data-k="t61">Suuqyada</h3><p data-k="t62">Ganacsatadu waxay boorar iyo ololo ka sameeyaan dukaamadooda.</p><a data-k="t63" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">⭐</div><h3 data-k="t64">Dadka caanka ah</h3><p data-k="t65">Codkiinnu wuxuu gaaraa malaayiin: ku biira oo dhiig bixiya.</p><a data-k="t66" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">📖</div><h3 data-k="t67">Culimada</h3><p data-k="t68">Khudbadaha iyo masaajidka ku faafi fariinta badbaadinta nafta.</p><a data-k="t69" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">👩</div><h3 data-k="t70">Haweenka</h3><p data-k="t71">Hooyooyinka iyo ururada haweenka: hoggaamiya ololaha, gaadiidka iyo wacyigelinta.</p><a data-k="t72" class="btn o" href="#register" style="width:100%">Ku biir</a></div><div class="card"><div style="font-size:30px">🧑‍🎓</div><h3 data-k="t73">Dhalinyarada</h3><p data-k="t74">Ururada, kooxaha ciyaaraha iyo guutooyinka ardayda: sameeya tartan dhiig-bixin.</p><a data-k="t75" class="btn o" href="#register" style="width:100%">Ku biir</a></div></div></div></section>
 <section id="compat"><div class="wrap split">
-<div><h2>Dhiiggaaga yaa kula socon kara?</h2><p class="lead">Dooro nooca dhiigga si aad u aragto cidda aad siin karto iyo cidda ku siin karta.</p>
+<div><h2 data-k="t76">Dhiiggaaga yaa kula socon kara?</h2><p data-k="t77" class="lead">Dooro nooca dhiigga si aad u aragto cidda aad siin karto iyo cidda ku siin karta.</p>
 <select class="f" id="ct" onchange="compat()" aria-label="Nooca dhiigga"><option value="">Dooro nooca dhiigga</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select>
 <div id="cr" style="margin-top:14px"></div></div>
-<div class="card"><h3>Ma bixin kartaa dhiig?</h3><p>Guud ahaan waxaad bixin kartaa haddii:</p>
-<div class="pills"><span>Da'da 18–65</span><span>Culeys 50kg+</span><span>Caafimaad qab</span><span>3 bilood ka dib bixintii hore</span></div>
-<p>Haddii aad uur leedahay, nuujiso, ama qandho/xanuun hadda qabto, dib u dhig. Go'aanka ugu dambeeya waxaa gaara shaqaalaha caafimaadka. Weydii Caawiyaha AI (hoose midig) su'aal kasta.</p></div>
+<div class="card"><h3 data-k="t78">Ma bixin kartaa dhiig?</h3><p data-k="t79">Guud ahaan waxaad bixin kartaa haddii:</p>
+<div class="pills"><span data-k="t80">Da'da 18–65</span><span data-k="t81">Culeys 50kg+</span><span data-k="t82">Caafimaad qab</span><span data-k="t83">3 bilood ka dib bixintii hore</span></div>
+<p data-k="t84">Haddii aad uur leedahay, nuujiso, ama qandho/xanuun hadda qabto, dib u dhig. Go'aanka ugu dambeeya waxaa gaara shaqaalaha caafimaadka. Weydii Caawiyaha AI (hoose midig) su'aal kasta.</p></div>
 </div></section>
 
 <section class="soft" id="request"><div class="wrap split">
-<div><h2>Codso dhiig degdeg ah</h2><p class="lead">Buuxi macluumaadka, waxaana kuu diyaarinaynaa farriin WhatsApp ah oo aad ugu dirto qoyskaaga, jaaliyadda iyo kooxaha magaaladaada.</p></div>
+<div><h2 data-k="t85">Codso dhiig degdeg ah</h2><p data-k="t86" class="lead">Buuxi macluumaadka, waxaana kuu diyaarinaynaa farriin WhatsApp ah oo aad ugu dirto qoyskaaga, jaaliyadda iyo kooxaha magaaladaada.</p></div>
 <form class="box" id="rf">
-<div><label for="rb">Nooca dhiigga</label><select class="f" id="rb" required><option value="">Dooro</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div>
-<div><label for="ru">Immisa kiish?</label><input class="f" id="ru" type="number" min="1" max="20" value="1" required></div>
-<div><label for="rh">Isbitaalka</label><input class="f" id="rh" required placeholder="Magaca isbitaalka"></div>
-<div><label for="rc">Magaalada</label><input class="f" id="rc" required placeholder="Muqdisho"></div>
-<div><label for="rg">Sidee u degdeg badan?</label><select class="f" id="rg"><option>Hadda (degdeg)</option><option>Maanta</option><option>Toddobaadkan</option></select></div>
-<div><label for="rp">Taleefanka xiriirka</label><input class="f" id="rp" type="tel" required placeholder="+252..."></div>
-<div class="full"><button class="btn p" style="width:100%" type="submit">Diyaari farriinta WhatsApp</button></div></form>
+<div><label data-k="t87" for="rb">Nooca dhiigga</label><select class="f" id="rb" required><option value="">Dooro</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div>
+<div><label data-k="t88" for="ru">Immisa kiish?</label><input class="f" id="ru" type="number" min="1" max="20" value="1" required></div>
+<div><label data-k="t89" for="rh">Isbitaalka</label><input class="f" id="rh" required placeholder="Magaca isbitaalka"></div>
+<div><label data-k="t90" for="rc">Magaalada</label><input class="f" id="rc" required placeholder="Muqdisho"></div>
+<div><label data-k="t91" for="rg">Sidee u degdeg badan?</label><select class="f" id="rg"><option>Hadda (degdeg)</option><option>Maanta</option><option>Toddobaadkan</option></select></div>
+<div><label data-k="t92" for="rp">Taleefanka xiriirka</label><input class="f" id="rp" type="tel" required placeholder="+252..."></div>
+<div class="full"><button data-k="t93" class="btn p" style="width:100%" type="submit">Diyaari farriinta WhatsApp</button></div></form>
 </div></section>
 
-<section id="register"><div class="wrap"><h2>Iska diiwaangeli deeq-bixiye ahaan</h2><p class="lead">Bilaash. Xogtaada si taxadar leh ayaa loo ilaaliyaa, lamana tusayo dadweynaha.</p>
+<section id="register"><div class="wrap"><h2 data-k="t94">Iska diiwaangeli deeq-bixiye ahaan</h2><p data-k="t95" class="lead">Bilaash. Xogtaada si taxadar leh ayaa loo ilaaliyaa, lamana tusayo dadweynaha.</p>
 <form class="box" id="df" style="max-width:780px">
-<div><label for="n">Magaca oo buuxa</label><input class="f" id="n" required></div>
-<div><label for="p">Taleefanka</label><input class="f" id="p" type="tel" required placeholder="+252..."></div>
-<div><label for="bl">Nooca dhiigga</label><select class="f" id="bl" required><option value="">Dooro</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option><option>Ma aqaan</option></select></div>
-<div><label for="region">Gobolka</label><select class="f" id="region" required><option value="">Dooro gobolka</option></select></div>
-<div><label for="city">Magaalada</label><select class="f" id="city" required disabled><option value="">Marka hore dooro gobolka</option></select></div>
-<div><label for="district">Degmada</label><select class="f" id="district"><option value="">Dooro degmada</option></select></div>
-<div class="full"><label for="grp">Ka socdaa (ikhtiyaari)</label><select class="f" id="grp"><option value="">Shakhsi</option><option>Jaamacad</option><option>Iskuul</option><option>Xarun dowladeed</option><option>Suuq / ganacsi</option><option>Culimo / masjid</option><option>Urur haween</option><option>Urur dhalinyaro</option><option>Dadka caanka ah</option></select></div>
-<div class="full" id="cw" style="display:none"><label for="cp">Qor goobtaada</label><input class="f" id="cp" placeholder="Magaalada ama degmada"></div>
+<div><label data-k="t96" for="n">Magaca oo buuxa</label><input class="f" id="n" required></div>
+<div><label data-k="t97" for="p">Taleefanka</label><input class="f" id="p" type="tel" required placeholder="+252..."></div>
+<div><label data-k="t98" for="bl">Nooca dhiigga</label><select class="f" id="bl" required><option value="">Dooro</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option><option>Ma aqaan</option></select></div>
+<div><label data-k="t99" for="region">Gobolka</label><select class="f" id="region" required><option value="">Dooro gobolka</option></select></div>
+<div><label data-k="t100" for="city">Magaalada</label><select class="f" id="city" required disabled><option value="">Marka hore dooro gobolka</option></select></div>
+<div><label data-k="t101" for="district">Degmada</label><select class="f" id="district"><option value="">Dooro degmada</option></select></div>
+<div class="full"><label data-k="t102" for="grp">Ka socdaa (ikhtiyaari)</label><select class="f" id="grp"><option value="">Shakhsi</option><option>Jaamacad</option><option>Iskuul</option><option>Xarun dowladeed</option><option>Suuq / ganacsi</option><option>Culimo / masjid</option><option>Urur haween</option><option>Urur dhalinyaro</option><option>Dadka caanka ah</option></select></div>
+<div class="full" id="cw" style="display:none"><label data-k="t103" for="cp">Qor goobtaada</label><input class="f" id="cp" placeholder="Magaalada ama degmada"></div>
 <div class="full"><label class="chk"><input type="checkbox" required> Waan oggolahay in Hiil-Dhiig igala soo xiriirto marka dhiig loo baahdo, xogtayduna aan la iibin.</label></div>
-<div class="full"><button class="btn p" style="width:100%" type="submit">Gudbi diiwaangelinta</button><div class="msg" id="dm">Mahadsanid! Waad diiwaangashan tahay. Waan kula soo xiriiri doonnaa.</div></div></form>
+<div class="full"><button data-k="t104" class="btn p" style="width:100%" type="submit">Gudbi diiwaangelinta</button><div class="msg" id="dm">Mahadsanid! Waad diiwaangashan tahay. Waan kula soo xiriiri doonnaa.</div></div></form>
 </div></section>
 
-<section class="navy" id="support"><div class="wrap"><h2>Taageer Hiil-Dhiig</h2><p class="lead" style="color:#e8cfd2">Dhiig lama iibiyo, deeq-bixiyaha iyo bukaanku waxba ma bixiyaan. Shabakaddu waxay ku socotaa taageerada hay'adaha iyo dadka.</p>
+<section class="navy" id="support"><div class="wrap"><h2 data-k="t105">Taageer Hiil-Dhiig</h2><p data-k="t106" class="lead" style="color:#e8cfd2">Dhiig lama iibiyo, deeq-bixiyaha iyo bukaanku waxba ma bixiyaan. Shabakaddu waxay ku socotaa taageerada hay'adaha iyo dadka.</p>
 <div class="tiers">
-<div class="card"><h3>Isbitaallada & xarumaha</h3><p>Boggaaga xaqiijinta leh, codsiyo toos ah iyo warbixin bille ah.</p><a class="btn w" href="mailto:info@hiildhiig.org?subject=Isbitaal">La xiriir</a></div>
-<div class="card"><h3>Shirkado & telekoomka</h3><p>Ku taageer ololayaasha bixinta dhiigga, magacaaguna wuxuu ka muuqanayaa goobaha.</p><a class="btn w" href="mailto:info@hiildhiig.org?subject=Taageere">La xiriir</a></div>
-<div class="card"><h3>Shakhsiyaad</h3><p>Ku deeq EVC Plus, eDahab ama Sahal. Lambarka halkan ku dar (eeg README).</p><a class="btn w" href="#" onclick="alert('Ku dar lambarkaaga CONFIG ee index.html');return false">Deeq</a></div>
+<div class="card"><h3 data-k="t107">Isbitaallada & xarumaha</h3><p data-k="t108">Boggaaga xaqiijinta leh, codsiyo toos ah iyo warbixin bille ah.</p><a data-k="t109" class="btn w" href="mailto:info@hiildhiig.org?subject=Isbitaal">La xiriir</a></div>
+<div class="card"><h3 data-k="t110">Shirkado & telekoomka</h3><p data-k="t111">Ku taageer ololayaasha bixinta dhiigga, magacaaguna wuxuu ka muuqanayaa goobaha.</p><a data-k="t112" class="btn w" href="mailto:info@hiildhiig.org?subject=Taageere">La xiriir</a></div>
+<div class="card"><h3 data-k="t113">Shakhsiyaad</h3><p data-k="t114">Ku deeq EVC Plus, eDahab ama Sahal. Lambarka halkan ku dar (eeg README).</p><a data-k="t115" class="btn w" href="#" onclick="alert('Ku dar lambarkaaga CONFIG ee index.html');return false">Deeq</a></div>
 </div></div></section>
 
-<section id="faq"><div class="wrap" style="max-width:760px"><h2>Su'aalaha caanka ah</h2><br>
-<details><summary>Ma xanuunsan tahay?</summary><p>Waxaad dareemi kartaa mudid yar oo sida irbad caadi ah. Bixintu waxay qaadataa ilaa 10 daqiiqo.</p></details>
-<details><summary>Jidhkayga ma daciifinayaa?</summary><p>Maya. Dareeraha jidhkaagu dib ayuu u buuxiyaa 24–48 saacadood gudahood, unugyada dhiiguna toddobaadyo gudahood.</p></details>
-<details><summary>Xogtayda yaa arki kara?</summary><p>Lambarkaaga dadweynaha lagama muujiyo. Hiil-Dhiig ayaa kuu gudbisa codsiyada ku habboon.</p></details>
-<details><summary>Dhiiga lacag ma ku jirtaa?</summary><p>Maya. Dhiiga lama iibiyo lamana iibsado. Waa deeq bilaash ah.</p></details>
+<section id="faq"><div class="wrap" style="max-width:760px"><h2 data-k="t116">Su'aalaha caanka ah</h2><br>
+<details><summary data-k="t117">Ma xanuunsan tahay?</summary><p data-k="t118">Waxaad dareemi kartaa mudid yar oo sida irbad caadi ah. Bixintu waxay qaadataa ilaa 10 daqiiqo.</p></details>
+<details><summary data-k="t119">Jidhkayga ma daciifinayaa?</summary><p data-k="t120">Maya. Dareeraha jidhkaagu dib ayuu u buuxiyaa 24–48 saacadood gudahood, unugyada dhiiguna toddobaadyo gudahood.</p></details>
+<details><summary data-k="t121">Xogtayda yaa arki kara?</summary><p data-k="t122">Lambarkaaga dadweynaha lagama muujiyo. Hiil-Dhiig ayaa kuu gudbisa codsiyada ku habboon.</p></details>
+<details><summary data-k="t123">Dhiiga lacag ma ku jirtaa?</summary><p data-k="t124">Maya. Dhiiga lama iibiyo lamana iibsado. Waa deeq bilaash ah.</p></details>
 </div></section>
 </main>
 
-<footer><div class="wrap row" style="flex-wrap:wrap"><span><b style="color:#fff;font-family:Georgia,serif;font-size:18px">Hiil-Dhiig</b><br>Hal dhiig, hal nolol. © 2026</span><span>Macluumaadkan waa waxbarasho, ma beddelayo talo dhakhtar. <a href="mailto:info@hiildhiig.org">info@hiildhiig.org</a></span></div></footer>
+<footer><div class="wrap row" style="flex-wrap:wrap"><span><b style="color:#fff;font-family:Georgia,serif;font-size:18px">Hiil-Dhiig</b><br>Hal dhiig, hal nolol. © 2026</span><span>Macluumaadkan waa waxbarasho, ma beddelayo talo dhakhtar. <a data-k="t125" href="mailto:info@hiildhiig.org">info@hiildhiig.org</a></span></div></footer>
 
 <div id="ai"><div id="aip"><div id="aih">Caawiyaha Hiil-Dhiig</div><div id="log"><div class="m">Salaan! Waxaan kaa caawin karaa su'aalaha dhiig-bixinta. Maxaad rabtaa inaad ogaato?</div></div>
-<div class="chips"><button>Ma bixin karaa dhiig?</button><button>Kahor bixinta</button><button>Kadib bixinta</button><button>Noocyada dhiigga</button></div>
-<form id="aif"><input class="f" id="aiq" placeholder="Qor su'aashaada" autocomplete="off"><button class="btn p" type="submit">Dir</button></form></div>
-<button id="aib" onclick="document.getElementById('aip').classList.toggle('show')">Weydii AI</button></div>
+<div class="chips"><button data-k="t126">Ma bixin karaa dhiig?</button><button data-k="t127">Kahor bixinta</button><button data-k="t128">Kadib bixinta</button><button data-k="t129">Noocyada dhiigga</button></div>
+<form id="aif"><input class="f" id="aiq" placeholder="Qor su'aashaada" autocomplete="off"><button data-k="t130" class="btn p" type="submit">Dir</button></form></div>
+<button data-k="t131" id="aib" onclick="document.getElementById('aip').classList.toggle('show')">Weydii AI</button></div>
 
-<nav class="tab"><a href="#donors">🔍<span>Raadi</span></a><a href="#request">🩸<span>Codso</span></a><a href="#register">❤️<span>Ku biir</span></a><a href="#join">🤝<span>Bulshada</span></a></nav>
+<nav class="tab"><a href="#donors">🔍<span data-k="t132">Raadi</span></a><a href="#request">🩸<span data-k="t133">Codso</span></a><a href="#register">❤️<span data-k="t134">Ku biir</span></a><a href="#join">🤝<span data-k="t135">Bulshada</span></a></nav>
 <script>
 const CONFIG={WHATSAPP:'',FORM_ENDPOINT:'',AI_ENDPOINT:''}; // WHATSAPP: tusaale 252612345678
-const R={"Banaadir":["Muqdisho"],"Bari":["Boosaaso","Qardho","Caluula"],"Nugaal":["Garoowe","Eyl","Burtinle"],"Mudug":["Gaalkacyo","Hobyo","Galdogob"],"Galgaduud":["Dhuusamareeb","Cadaado","Guriceel"],"Hiiraan":["Beledweyne","Buuloburde"],"Shabeellaha Dhexe":["Jowhar","Balcad"],"Shabeellaha Hoose":["Marka","Afgooye","Baraawe"],"Baay":["Baydhabo","Buurhakaba"],"Bakool":["Xudur","Waajid"],"Gedo":["Baardheere","Garbahaarey","Luuq"],"Jubbada Dhexe":["Bu'aale","Jilib"],"Jubbada Hoose":["Kismaayo","Afmadow","Jamaame"],"Awdal":["Boorama","Saylac"],"Maroodi Jeex":["Hargeysa","Gabiley"],"Togdheer":["Burco","Oodweyne"],"Sanaag":["Ceerigaabo","Badhan"],"Sool":["Laascaanood","Xudun"],"Meel kale":[]};
-const BD=["Cabdiaziz","Bondhere","Daynile","Dharkenley","Hamar Jajab","Hamar Weyne","Heliwa","Hodan","Hawl Wadag","Kaxda","Karan","Shangani","Shibis","Waberi","Wadajir","Warta Nabadda","Yaqshid"];
+let GEO={"Banaadir":{"Muqdisho":[]}};
 const $=id=>document.getElementById(id);
 function fill(s,a,l,c){s.innerHTML=`<option value="">${l}</option>`+a.map(v=>`<option>${v}</option>`).join('')+(c?'<option value="__c">Meel kale...</option>':'');s.disabled=false}
-Object.keys(R).forEach(k=>{const o=document.createElement('option');o.textContent=o.value=k;$('region').append(o)});
-$('region').onchange=e=>{const v=e.target.value;$('cw').style.display=v==='Meel kale'?'block':'none';
- v&&R[v].length?fill($('city'),R[v],'Dooro magaalada',1):($('city').innerHTML='<option value="">-</option>',$('city').disabled=!v);
- fill($('district'),v==='Banaadir'?BD:[],'Dooro degmada',1)};
-$('city').onchange=e=>{if(e.target.value==='__c')$('cw').style.display='block'};
+function initGeo(){$('region').innerHTML='<option value="">Dooro gobolka</option>'+Object.keys(GEO).map(k=>`<option>${k}</option>`).join('')+'<option>Meel kale</option>';
+ fill($('cf'),[...new Set(Object.values(GEO).flatMap(c=>Object.keys(c)))].sort(),'Magaalada')}
+$('region').onchange=e=>{const v=e.target.value,c=GEO[v]?Object.keys(GEO[v]):[];$('cw').style.display=v==='Meel kale'?'block':'none';
+ v&&c.length?fill($('city'),c,'Dooro magaalada',1):($('city').innerHTML='<option value="">-</option>',$('city').disabled=!v);fill($('district'),[],'Dooro degmada',1)};
+$('city').onchange=e=>{const v=e.target.value;if(v==='__c')$('cw').style.display='block';fill($('district'),(GEO[$('region').value]||{})[v]||[],'Dooro degmada',1)};
+initGeo();
+fetch('content.json?'+Date.now()).then(r=>r.json()).then(c=>{if(c.geo)GEO=c.geo;initGeo();for(const k in c.texts||{}){const e=document.querySelector(`[data-k="${k}"]`);if(e)e.textContent=c.texts[k]}
+ if(c.bannerImg)document.querySelector('.ban').style.background='linear-gradient(#3b0d13b3,#3b0d13b3),url(assets/banner.jpg) center/cover'}).catch(()=>{});
 function filterDonors(){const b=$('bf').value,c=$('cf').value,t=$('tf').value;let n=0;
  document.querySelectorAll('#dgrid .card').forEach(x=>{const ok=(!b||x.dataset.b===b)&&(!c||x.dataset.c===c)&&(!t||x.dataset.t===t);x.style.display=ok?'':'none';n+=ok});
  $('none').style.display=n?'none':'block'}

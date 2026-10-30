@@ -32,3 +32,6 @@ Settings → Pages → Branch: `main` → `/ (root)`. Bogga wuxuu noqonayaa `htt
 
 ## Shatiga
 MIT (ku dar faylka `LICENSE`).
+
+## Admin
+Fur `/admin.html`: qoraallada, sawirrada, banner-ka, gobollada, magaalooyinka iyo degmooyinka ka beddel, kadibna taabo **Daabac**. Waxay u baahan tahay GitHub token (Contents: Read and write, repo-gan oo keliya) oo lagu daro tab **Habayn**. Wax lagu keydiyo `content.json` iyo `assets/`; Render si toos ah ayuu u cusboonaysiiyaa.

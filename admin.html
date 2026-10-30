@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="so"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="theme-color" content="#3b0d13"><link rel="manifest" href="manifest.webmanifest"><title>Hiil-Dhiig Admin</title>
+<style>
+:root{--red:#b3202e;--dk:#3b0d13;--sand:#f8f1e6;--line:#e8dfd2}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,sans-serif;background:var(--sand);color:#1d1a1b}
+header{background:var(--dk);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+h1{font:700 18px Georgia,serif;margin:0}
+nav{display:flex;gap:6px;padding:10px 12px;overflow-x:auto;background:#fff;border-bottom:1px solid var(--line)}
+nav button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:7px 14px;white-space:nowrap}nav button.on{background:var(--red);color:#fff;border-color:var(--red)}
+main{max-width:860px;margin:auto;padding:16px}.c{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+input,textarea,select{width:100%;border:1.5px solid var(--line);border-radius:8px;padding:9px;font:inherit}textarea{min-height:56px}
+.b{border:0;border-radius:8px;padding:10px 16px;font-weight:700;background:var(--red);color:#fff}.b.g{background:#fff;color:var(--red);border:1.5px solid var(--red)}
+label{display:block;font-size:12px;font-weight:700;color:#6b6466;margin:8px 0 3px}.r{display:flex;gap:8px;align-items:center}.r>*{flex:1}.r>.b{flex:0;white-space:nowrap}
+#st{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);background:var(--dk);color:#fff;padding:10px 18px;border-radius:20px;display:none;z-index:9;max-width:90%}
+img.pv{width:100%;height:130px;object-fit:cover;border-radius:8px;background:#f1e3c8}.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.n{font:700 30px Georgia,serif;color:var(--red)}
+</style></head><body>
+<header><h1>Hiil-Dhiig Admin</h1><button class="b" onclick="pub()" style="background:#fff;color:var(--red)">Daabac</button></header>
+<nav id="nv"></nav><main id="v"></main><div id="st"></div>
+<script>
+const $=id=>document.getElementById(id),L=localStorage,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let C={texts:{},geo:{}},D={},rg='',S=JSON.parse(L.hd_s||'{"repo":"anasalmaamri/hiil-dhiig","br":"main","tk":""}');
+const toast=m=>{const s=$('st');s.textContent=m;s.style.display='block';setTimeout(()=>s.style.display='none',3500)},save=()=>L.hd_d=JSON.stringify(C);
+async function put(path,b64,msg){if(!S.tk)throw'Marka hore ku dar token (tab Habayn)';
+ const u=`https://api.github.com/repos/${S.repo}/contents/${path}`,h={Authorization:'Bearer '+S.tk,Accept:'application/vnd.github+json'};
+ const g=await fetch(u+'?ref='+S.br,{headers:h}),sha=g.ok?(await g.json()).sha:undefined;
+ const r=await fetch(u,{method:'PUT',headers:h,body:JSON.stringify({message:msg,content:b64,branch:S.br,sha})});
+ if(!r.ok)throw'GitHub: '+(await r.json()).message}
+async function pub(){try{save();await put('content.json',btoa(unescape(encodeURIComponent(JSON.stringify(C,null,1)))),'Admin: content');toast('Waa la daabacay! Render wuxuu cusboonaysiinayaa 1–2 daqiiqo gudahood.')}catch(e){toast(e)}}
+async function up(i){const f=$('f'+i).files[0],p=i?`assets/photos/${i}.jpg`:'assets/banner.jpg';if(!f)return toast('Dooro sawir marka hore');
+ try{const im=await createImageBitmap(f),s=Math.min(1,1200/im.width),cv=document.createElement('canvas');cv.width=im.width*s;cv.height=im.height*s;cv.getContext('2d').drawImage(im,0,0,cv.width,cv.height);
+ await put(p,cv.toDataURL('image/jpeg',.85).split(',')[1],'Admin: '+p);if(!i){C.bannerImg=true;save()}toast('Sawirka waa la rarey')}catch(e){toast(e)}}
+const T={
+ t0(){const d=k=>JSON.parse(L[k]||'[]').length,cities=Object.values(C.geo).reduce((a,g)=>a+Object.keys(g).length,0);
+  return `<div class="g4"><div class="c"><div class="n">${Object.keys(C.texts).length}</div>Qoraallo la saxay</div><div class="c"><div class="n">${Object.keys(C.geo).length}</div>Gobollo</div><div class="c"><div class="n">${cities}</div>Magaalooyin</div><div class="c"><div class="n">${d('donors')}/${d('requests')}</div>Deeq-bixiyeyaal/codsiyo (qalabkan oo keliya)</div></div><div class="c">1. Wax ka beddel tabyada. 2. Taabo <b>Daabac</b>. Isbeddelada waxaa lagu keydiyaa GitHub, Render-na wuu cusboonaysiiyaa. Tirakoobka dhabta ah wuxuu u baahan yahay server (Supabase), ma jiro weli.</div>`},
+ t1(){return `<input id="q" placeholder="Raadi qoraal..." oninput="flt()">`+Object.keys(D).map(k=>`<div class="c"><label>${k}</label><textarea data-k="${k}">${esc(C.texts[k]??D[k])}</textarea></div>`).join('')},
+ t2(){return [0,1,2,3,4].map(i=>`<div class="c"><b>${i?'Sawir '+i+' (Soomaalida waa bixisaa)':'Banner-ka (asalka)'}</b><img class="pv" src="${i?`assets/photos/${i}.jpg`:'assets/banner.jpg'}?${Date.now()}" alt="" onerror="this.style.opacity=.3"><input type="file" id="f${i}" accept="image/*"><br><br><button class="b" onclick="up(${i})">Rar</button></div>`).join('')},
+ t3(){const g=C.geo,rs=Object.keys(g);rg=rg in g?rg:rs[0];
+  return `<div class="c r"><select id="rs">${rs.map(r=>`<option ${r==rg?'selected':''}>${esc(r)}</option>`).join('')}</select><button class="b g" data-a="R">+ Gobol</button><button class="b g" data-a="C">+ Magaalo</button></div>`+Object.entries(g[rg]||{}).map(([c,d])=>`<div class="c"><div class="r"><b>${esc(c)}</b><button class="b g" data-del="${esc(c)}">Tir</button></div><label>Degmooyin (kala saar comma)</label><textarea data-c="${esc(c)}">${esc(d.join(', '))}</textarea></div>`).join('')},
+ t4(){return `<div class="c"><label>Repo</label><input id="s1" value="${esc(S.repo)}"><label>Branch</label><input id="s2" value="${esc(S.br)}"><label>GitHub token (Contents: Read and write, repo-gan oo keliya)</label><input id="s3" type="password" value="${esc(S.tk)}"><br><br><button class="b" onclick="S={repo:s1.value,br:s2.value,tk:s3.value};L.hd_s=JSON.stringify(S);toast('La keydiyay')">Keydi</button></div><div class="c">Token-ku wuxuu ku jiraa qalabkan oo keliya. Ha la wadaagin qof kale.</div>`}};
+const N=['Guudmar','Qoraallo','Sawirro','Goobaha','Habayn'];
+function show(i){$('nv').innerHTML=N.map((n,j)=>`<button class="${i==j?'on':''}" onclick="show(${j})">${n}</button>`).join('');$('v').innerHTML=T['t'+i]()}
+function flt(){const q=$('q').value.toLowerCase();document.querySelectorAll('.c').forEach(c=>{const t=c.querySelector('textarea');if(t)c.style.display=(t.value+t.dataset.k).toLowerCase().includes(q)?'':'none'})}
+$('v').addEventListener('input',e=>{const t=e.target;if(t.dataset.k){t.value===D[t.dataset.k]?delete C.texts[t.dataset.k]:C.texts[t.dataset.k]=t.value}
+ if(t.dataset.c)C.geo[rg][t.dataset.c]=t.value.split(',').map(s=>s.trim()).filter(Boolean);save()});
+$('v').addEventListener('change',e=>{if(e.target.id==='rs'){rg=e.target.value;show(3)}});
+$('v').addEventListener('click',e=>{const t=e.target,a=t.dataset.a;
+ if(a==='R'){const n=prompt('Magaca gobolka cusub');if(n){C.geo[n]={};rg=n}}
+ if(a==='C'){const n=prompt('Magaca magaalada cusub');if(n&&rg)C.geo[rg][n]=[]}
+ if(t.dataset.del&&confirm('Tir '+t.dataset.del+'?'))delete C.geo[rg][t.dataset.del];
+ if(a||t.dataset.del){save();show(3)}});
+(async()=>{try{C=await(await fetch('content.json?'+Date.now())).json()}catch(e){}
+ if(L.hd_d)C=JSON.parse(L.hd_d);C.texts=C.texts||{};C.geo=C.geo||{};
+ try{new DOMParser().parseFromString(await(await fetch('index.html?'+Date.now())).text(),'text/html').querySelectorAll('[data-k]').forEach(e=>D[e.dataset.k]=e.textContent)}catch(e){}
+ show(0)})();
+</script></body></html>

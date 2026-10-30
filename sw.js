@@ -1,4 +1,4 @@
-const C='hd-v1',A=['./','index.html','manifest.webmanifest','assets/icon.svg','assets/banner.svg'];
+const C='hd-v1',A=['./','index.html','manifest.webmanifest','assets/icon.svg','assets/banner.svg','admin.html','content.json'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(A)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>clients.claim())));
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET'||!r.url.startsWith(self.location.origin))return;
